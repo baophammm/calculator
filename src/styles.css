@@ -1,0 +1,92 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  background-color: #29262c;
+  font-family: "Dosis", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  height: 100%;
+  margin: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#calculator {
+  width: 100%;
+  max-width: 400px;
+  height: 400px;
+  background-color: #967c6d;
+
+  border-radius: 7.5px;
+  padding: 15px;
+  margin: 2px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#display {
+  background-color: #382325;
+  letter-spacing: 0.125pc;
+  color: #fff;
+  height: 2.5pc;
+  padding: 0.625pc;
+  margin: 0.625pc;
+  border-radius: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#calculator .row {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#calculator .row .btn-wrapper {
+  flex-basis: 25%;
+  width: 25%;
+  height: 3.75pc;
+  padding: 0.625pc;
+  display: block;
+}
+
+#calculator .row .btn-wrapper .btn {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 5px;
+  border-width: medium;
+  font-size: 24px;
+  font-weight: 700;
+  color: #d74742;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#calculator .row .btn-wrapper .btn-del {
+  font-size: 1pc;
+}
+
+#calculator .row .btn-wrapper .btn-clear,
+#calculator .row .btn-wrapper .btn-equal {
+  background-color: #923532;
+  color: white;
+}
+
+.btn-toggle-on {
+  background-color: #923532;
+  color: white;
+}
